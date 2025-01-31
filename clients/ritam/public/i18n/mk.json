@@ -1,0 +1,18 @@
+{
+    "header": {
+        "menu-title": "Ритам",
+        "menu-home": "Дома",
+        "menu-people": "Вработени",
+        "menu-language": "Јазик"
+    },
+    "login": {
+        "title": "Најава",
+        "form-username": "Корисничко име",
+        "form-password": "Лозинка",
+        "form-submit": "Најави се",
+        "form-password-prompt": "Одберете лозинка",
+        "form-password-weakLabel": "Едноставна",
+        "form-password-mediumLabel": "Средна",
+        "form-password-strongLabel": "Комплексна"
+    }
+}

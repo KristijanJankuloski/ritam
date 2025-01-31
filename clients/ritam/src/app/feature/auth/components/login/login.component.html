@@ -1,0 +1,20 @@
+<div class="container mx-auto pt-8 max-w-120">
+    <shared-simple-card header="login.title">
+        <form [formGroup]="loginForm">
+            <shared-text-input-float
+                [parentFrom]="loginForm"
+                controlName="username"
+                label="login.form-username"
+            ></shared-text-input-float>
+            <shared-password-input
+                [parentFrom]="loginForm"
+                controlName="password"
+                label="login.form-password"
+            ></shared-password-input>
+            <shared-button
+                text="login.form-submit"
+                icon="pi pi-check"
+            ></shared-button>
+        </form>
+    </shared-simple-card>
+</div>

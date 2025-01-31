@@ -1,0 +1,18 @@
+{
+    "header": {
+        "menu-title": "Rhythm",
+        "menu-home": "Home",
+        "menu-people": "People",
+        "menu-language": "Language"
+    },
+    "login": {
+        "title": "Login",
+        "form-username": "Username",
+        "form-password": "Password",
+        "form-submit": "Login",
+        "form-password-prompt": "Choose a password",
+        "form-password-weakLabel": "Too simple",
+        "form-password-mediumLabel": "Average complexity",
+        "form-password-strongLabel": "Complex password"
+    }
+}

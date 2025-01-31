@@ -1,0 +1,33 @@
+<p-menubar [model]="items">
+    <ng-template #start>
+        <h3>{{ 'header.menu-title' | translate }}</h3>
+    </ng-template>
+    <ng-template #item let-item let-root="root">
+        <a *ngIf="shouldShowItems" pRipple class="flex items-center p-menubar-item-link">
+            <i [class]="item.icon"></i>
+            <span>{{ item.label | translate }}</span>
+            <span *ngIf="item.shortcut" class="ml-auto border border-surface rounded bg-emphasis text-muted-color text-xs">{{ item.shortcut }}</span>
+            <i *ngIf="item.items" [ngClass]="['ml-auto pi', root ? 'pi-angle-down' : 'pi-angle-right']"></i>
+        </a>
+    </ng-template>
+    <ng-template #end>
+        <p-menu #menu [model]="rightMenuItems" [popup]="true">
+            <ng-template #submenuheader let-item>
+                <span [class]="item.icon"></span>
+                <span class="text-primary font-bold">{{ item.label | translate }}</span>
+            </ng-template>
+            <ng-template #item let-item>
+                <a pRipple class="flex items-center">
+                    <span>
+                        <img [src]="item.icon">
+                    </span>
+                    <span class="cursor-pointer ml-2">{{ item.label | translate }}</span>
+                    <span *ngIf="item.shortcut" class="ml-auto border border-surface rounded bg-emphasis text-muted-color text-xs">
+                        {{ item.shortcut }}
+                    </span>
+                </a>
+            </ng-template>
+        </p-menu>
+        <p-button (click)="menu.toggle($event)" icon="pi pi-ellipsis-v" [rounded]="true" severity="secondary"/>
+    </ng-template>
+</p-menubar>
