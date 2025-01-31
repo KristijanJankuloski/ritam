@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { ChangeDetectionStrategy, Component, computed, Input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, input } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { TranslatePipe } from '@ngx-translate/core';
 import { FloatLabelModule } from 'primeng/floatlabel';
@@ -13,19 +13,15 @@ import { PasswordModule } from 'primeng/password';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class PasswordInputComponent {
-  @Input({required: true})
-  label: string;
+  public label = input.required<string>();
 
-  @Input({required: true})
-  controlName: string;
+  public controlName = input.required<string>();
 
-  @Input({required: true})
-  parentFrom: FormGroup;
+  public parentFrom = input.required<FormGroup>();
 
-  @Input()
-  feedback = false;
+  public feedback = input(false);
 
-  formControl = computed(() => {
-    return this.parentFrom.controls[this.controlName] as FormControl;
+  public formControl = computed(() => {
+    return this.parentFrom().controls[this.controlName()] as FormControl;
   });
 }

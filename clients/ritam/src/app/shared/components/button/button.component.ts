@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output } from '@angular/core';
+import { ChangeDetectionStrategy, Component, EventEmitter, input, Input, output, Output } from '@angular/core';
 import { TranslatePipe } from '@ngx-translate/core';
 import { ButtonModule } from 'primeng/button';
 
@@ -11,17 +11,13 @@ import { ButtonModule } from 'primeng/button';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ButtonComponent {
-  @Input({required: true})
-  public text: string;
+  public text = input.required<string>();
 
-  @Input()
-  public icon?: string;
+  public icon? = input<string>();
 
-  @Input()
-  public type : 'button' | 'submit' = 'button';
+  public type = input<'button' | 'submit'>('button');
 
-  @Output()
-  public onButtonClick = new EventEmitter<void>();
+  public onButtonClick = output<void>();
 
   public buttonClicked() {
     this.onButtonClick.emit();

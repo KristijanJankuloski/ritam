@@ -19,11 +19,11 @@ export class HeaderComponent implements OnInit {
   private readonly router = inject(Router);
   private readonly localStorageService = inject(LocalStorageService);
 
-  items?: MenuItem[];
-  rightMenuItems?: MenuItem[];
-  shouldShowItems = true;
+  public items?: MenuItem[];
+  public rightMenuItems?: MenuItem[];
+  public shouldShowItems = true;
 
-  ngOnInit(): void {
+  public ngOnInit(): void {
     this.items = [
       {
         label: 'header.menu-home',
@@ -61,12 +61,12 @@ export class HeaderComponent implements OnInit {
     ]
   }
 
-  changeLanguage(language: string) {
+  public changeLanguage(language: string): void {
     this.localStorageService.locale = language;
     this.translateService.use(language);
   }
 
-  routerNavigate(location: string[]){
+  public routerNavigate(location: string[]): void {
     this.router.navigate(location);
   }
 }

@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { Component, input } from '@angular/core';
 import { TranslatePipe } from '@ngx-translate/core';
 import { CardModule } from 'primeng/card';
 
@@ -10,6 +10,5 @@ import { CardModule } from 'primeng/card';
   styleUrl: './simple-card.component.css'
 })
 export class SimpleCardComponent {
-  @Input()
-  header?: string;
+  public header = input('');
 }

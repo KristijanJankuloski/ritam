@@ -1,6 +1,6 @@
 <div class="container mx-auto pt-8 max-w-120">
     <shared-simple-card header="login.title">
-        <form [formGroup]="loginForm">
+        <form [formGroup]="loginForm" (ngSubmit)="submitLogin()">
             <shared-text-input-float
                 [parentFrom]="loginForm"
                 controlName="username"
@@ -11,10 +11,13 @@
                 controlName="password"
                 label="login.form-password"
             ></shared-password-input>
-            <shared-button
-                text="login.form-submit"
-                icon="pi pi-check"
-            ></shared-button>
+            <div class="flex justify-end">
+                <shared-button
+                    text="login.form-submit"
+                    icon="pi pi-check"
+                    (onButtonClick)="submitLogin()"
+                ></shared-button>
+            </div>
         </form>
     </shared-simple-card>
 </div>

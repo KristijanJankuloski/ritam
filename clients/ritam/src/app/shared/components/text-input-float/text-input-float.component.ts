@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { ChangeDetectionStrategy, Component, computed, Input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, input } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { TranslatePipe } from '@ngx-translate/core';
 import { FloatLabelModule } from 'primeng/floatlabel';
@@ -13,16 +13,13 @@ import { InputTextModule } from 'primeng/inputtext';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class TextInputFloatComponent {
-  @Input({required: true})
-  label: string;
+  public label = input.required<string>();
 
-  @Input({required: true})
-  controlName: string;
+  public controlName = input.required<string>();
 
-  @Input({required: true})
-  parentFrom: FormGroup;
+  public parentFrom = input.required<FormGroup>();
 
-  formControl = computed(() => {
-    return this.parentFrom.controls[this.controlName] as FormControl;
+  public formControl = computed(() => {
+    return this.parentFrom().controls[this.controlName()] as FormControl;
   });
 }

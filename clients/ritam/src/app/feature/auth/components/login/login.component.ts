@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { ButtonComponent } from '@shared/components/button/button.component';
 import { PasswordInputComponent } from '@shared/components/password-input/password-input.component';
@@ -27,5 +27,14 @@ export class LoginComponent implements OnInit {
       username: new FormControl(null, [Validators.required]),
       password: new FormControl(null, [Validators.required])
     });
+  }
+
+  public submitLogin(): void {
+    console.log(this.loginForm.value);
+  }
+
+  @HostListener('document:keydown.Enter', ['$event'])
+  public handleEnterKeyPress(event: KeyboardEvent): void {
+    this.submitLogin();
   }
 }

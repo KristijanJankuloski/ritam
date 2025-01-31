@@ -13,7 +13,7 @@ import { LocalStorageService } from '@shared/services/local-storage.service';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'ritam';
+  public title = 'ritam';
 
   constructor(
     private translateService: TranslateService,
