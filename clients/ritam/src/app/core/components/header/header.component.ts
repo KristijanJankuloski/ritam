@@ -16,27 +16,12 @@ import { LocalStorageService } from '@shared/services/local-storage.service';
 })
 export class HeaderComponent implements OnInit {
   private readonly translateService = inject(TranslateService);
-  private readonly router = inject(Router);
   private readonly localStorageService = inject(LocalStorageService);
 
-  public items?: MenuItem[];
   public rightMenuItems?: MenuItem[];
   public shouldShowItems = true;
 
   public ngOnInit(): void {
-    this.items = [
-      {
-        label: 'header.menu-home',
-        icon: 'pi pi-home',
-        command: () => this.routerNavigate(['/'])
-      },
-      {
-        label: 'header.menu-people',
-        icon: 'pi pi-user',
-        command: () => this.routerNavigate(['/people'])
-      }
-    ];
-
     this.rightMenuItems = [
       {
         label: 'header.menu-language',
@@ -64,9 +49,5 @@ export class HeaderComponent implements OnInit {
   public changeLanguage(language: string): void {
     this.localStorageService.locale = language;
     this.translateService.use(language);
-  }
-
-  public routerNavigate(location: string[]): void {
-    this.router.navigate(location);
   }
 }

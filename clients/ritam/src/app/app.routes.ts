@@ -1,6 +1,7 @@
 import { Routes } from '@angular/router';
-import { LoginComponent } from './feature/auth/components/login/login.component';
+import { LayoutComponent } from '@app-core/components/layout/layout.component';
+import { authRoutes } from './feature/auth/auth.routes';
 
 export const routes: Routes = [
-    { path: 'login', loadComponent: () => LoginComponent }
+    { path: 'login', component: LayoutComponent, children: authRoutes }
 ];

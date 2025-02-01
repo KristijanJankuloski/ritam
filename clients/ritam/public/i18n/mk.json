@@ -1,8 +1,6 @@
 {
     "header": {
         "menu-title": "Ритам",
-        "menu-home": "Дома",
-        "menu-people": "Вработени",
         "menu-language": "Јазик"
     },
     "login": {
@@ -14,5 +12,12 @@
         "form-password-weakLabel": "Едноставна",
         "form-password-mediumLabel": "Средна",
         "form-password-strongLabel": "Комплексна"
+    },
+    "layout": {
+        "menu-people": "Вработени",
+        "menu-people-add": "Додади вработен",
+        "menu-people-list": "Листа на вработени",
+        "menu-events": "Настани",
+        "menu-events-list": "Листа на настани"
     }
 }

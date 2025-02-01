@@ -1,14 +1,6 @@
-<p-menubar [model]="items">
+<p-menubar>
     <ng-template #start>
         <h3>{{ 'header.menu-title' | translate }}</h3>
-    </ng-template>
-    <ng-template #item let-item let-root="root">
-        <a *ngIf="shouldShowItems" pRipple class="flex items-center p-menubar-item-link">
-            <i [class]="item.icon"></i>
-            <span>{{ item.label | translate }}</span>
-            <span *ngIf="item.shortcut" class="ml-auto border border-surface rounded bg-emphasis text-muted-color text-xs">{{ item.shortcut }}</span>
-            <i *ngIf="item.items" [ngClass]="['ml-auto pi', root ? 'pi-angle-down' : 'pi-angle-right']"></i>
-        </a>
     </ng-template>
     <ng-template #end>
         <p-menu #menu [model]="rightMenuItems" [popup]="true">

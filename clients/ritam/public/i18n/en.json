@@ -1,8 +1,6 @@
 {
     "header": {
         "menu-title": "Rhythm",
-        "menu-home": "Home",
-        "menu-people": "People",
         "menu-language": "Language"
     },
     "login": {
@@ -14,5 +12,12 @@
         "form-password-weakLabel": "Too simple",
         "form-password-mediumLabel": "Average complexity",
         "form-password-strongLabel": "Complex password"
+    },
+    "layout": {
+        "menu-people": "People",
+        "menu-people-add": "Add person",
+        "menu-people-list": "List people",
+        "menu-events": "Events",
+        "menu-events-list": "List events"
     }
 }
