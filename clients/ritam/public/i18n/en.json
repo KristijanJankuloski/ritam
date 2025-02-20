@@ -5,19 +5,46 @@
     },
     "login": {
         "title": "Login",
-        "form-username": "Username",
-        "form-password": "Password",
-        "form-submit": "Login",
-        "form-password-prompt": "Choose a password",
-        "form-password-weakLabel": "Too simple",
-        "form-password-mediumLabel": "Average complexity",
-        "form-password-strongLabel": "Complex password"
+        "form": {
+            "username": "Username",
+            "password": "Password",
+            "submit": "Login"
+        }
     },
     "layout": {
-        "menu-people": "People",
-        "menu-people-add": "Add person",
-        "menu-people-list": "List people",
-        "menu-events": "Events",
-        "menu-events-list": "List events"
+        "menu": {
+            "people": "People",
+            "people-add": "Add person",
+            "people-list": "List people",
+            "events": "Events",
+            "events-list": "List events"
+        }
+    },
+    "register": {
+        "title": "Register",
+        "form": {
+            "username": "Username",
+            "password": "Password",
+            "password-reppeated": "Reppeat password",
+            "submit": "Register",
+            "full-name": "Full Name",
+            "email": "Email",
+            "password-missmatch-error": "The password is not matching.",
+            "password-prompt": "Choose a password",
+            "password-weakLabel": "Weak",
+            "password-mediumLabel": "Medium",
+            "password-strongLabel": "Strong"
+        }
+    },
+    "toastr": {
+        "error": "Error",
+        "warning": "Warning",
+        "success": "Success"
+    },
+    "responses": {
+        "success": {
+        },
+        "errors": {
+        }
     }
 }

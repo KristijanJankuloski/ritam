@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { ChangeDetectionStrategy, Component, computed, input } from '@angular/core';
+import { Component, computed, input } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { TranslatePipe } from '@ngx-translate/core';
 import { FloatLabelModule } from 'primeng/floatlabel';
@@ -9,8 +9,7 @@ import { PasswordModule } from 'primeng/password';
   selector: 'shared-password-input',
   imports: [CommonModule, ReactiveFormsModule, PasswordModule, FloatLabelModule, TranslatePipe],
   templateUrl: './password-input.component.html',
-  styleUrl: './password-input.component.css',
-  changeDetection: ChangeDetectionStrategy.OnPush
+  styleUrl: './password-input.component.css'
 })
 export class PasswordInputComponent {
   public label = input.required<string>();

@@ -19,27 +19,27 @@ export class LayoutComponent implements OnInit {
   public ngOnInit(): void {
     this.items = [
       {
-        label: 'layout.menu-people',
+        label: 'layout.menu.people',
         icon: 'pi pi-user',
         items: [
           {
-            label: 'layout.menu-people-list',
+            label: 'layout.menu.people-list',
             icon: 'pi pi-list',
             command: () => this.navigate(['/people'])
           },
           {
-            label: 'layout.menu-people-add',
+            label: 'layout.menu.people-add',
             icon: 'pi pi-user-plus',
             command: () => this.navigate(['/people', 'add'])
           }
         ]
       },
       {
-        label: 'layout.menu-events',
+        label: 'layout.menu.events',
         icon: '',
         items: [
           {
-            label: 'layout.menu-events-list',
+            label: 'layout.menu.events-list',
             icon: 'pi pi-list',
             command: () => this.navigate(['/events'])
           }

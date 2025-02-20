@@ -16,8 +16,8 @@ export class AppComponent {
   public title = 'ritam';
 
   constructor(
-    private translateService: TranslateService,
-    private localStorageService: LocalStorageService) {
+    translateService: TranslateService,
+    localStorageService: LocalStorageService) {
     translateService.setTranslation('en', translationsEN);
     translateService.setTranslation('mk', translationsMK);
     translateService.addLangs(['en', 'mk']);

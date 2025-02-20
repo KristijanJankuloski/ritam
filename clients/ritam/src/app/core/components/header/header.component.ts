@@ -5,7 +5,6 @@ import { MenubarModule } from 'primeng/menubar';
 import { MenuModule } from 'primeng/menu';
 import { ButtonModule } from 'primeng/button';
 import { TranslatePipe, TranslateService } from '@ngx-translate/core';
-import { Router } from '@angular/router';
 import { LocalStorageService } from '@shared/services/local-storage.service';
 
 @Component({

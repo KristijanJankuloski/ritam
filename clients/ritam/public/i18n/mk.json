@@ -5,19 +5,46 @@
     },
     "login": {
         "title": "Најава",
-        "form-username": "Корисничко име",
-        "form-password": "Лозинка",
-        "form-submit": "Најави се",
-        "form-password-prompt": "Одберете лозинка",
-        "form-password-weakLabel": "Едноставна",
-        "form-password-mediumLabel": "Средна",
-        "form-password-strongLabel": "Комплексна"
+        "form": {
+            "username": "Корисничко име",
+            "password": "Лозинка",
+            "submit": "Најави се"
+        }
     },
     "layout": {
-        "menu-people": "Вработени",
-        "menu-people-add": "Додади вработен",
-        "menu-people-list": "Листа на вработени",
-        "menu-events": "Настани",
-        "menu-events-list": "Листа на настани"
+        "menu": {
+            "people": "Вработени",
+            "people-add": "Додади вработен",
+            "people-list": "Листа на вработени",
+            "events": "Настани",
+            "events-list": "Листа на настани"
+        }
+    },
+    "register": {
+        "title": "Регистрација",
+        "form": {
+            "username": "Корисничко име",
+            "password": "Лозинка",
+            "password-reppeated": "Повторена лозинка",
+            "submit": "Регистрирај се",
+            "full-name": "Име и презиме",
+            "email": "Емаил",
+            "password-missmatch-error": "Лозинката не се поклопува.",
+            "password-prompt": "Одберете лозинка",
+            "password-weakLabel": "Едноставна",
+            "password-mediumLabel": "Средна",
+            "password-strongLabel": "Комплексна"
+        }
+    },
+    "toastr": {
+        "error": "Грешка",
+        "warning": "Предупредување",
+        "success": "Успешно"
+    },
+    "responses": {
+        "success": {
+        },
+        "errors": {
+        }
     }
 }

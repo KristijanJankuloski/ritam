@@ -17,6 +17,8 @@ export class ButtonComponent {
 
   public type = input<'button' | 'submit'>('button');
 
+  public disable = input(false);
+
   public onButtonClick = output<void>();
 
   public buttonClicked() {

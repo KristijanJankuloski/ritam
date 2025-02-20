@@ -20,6 +20,8 @@
                 </a>
             </ng-template>
         </p-menu>
-        <p-button (click)="menu.toggle($event)" icon="pi pi-ellipsis-v" [rounded]="true" severity="secondary"/>
+        <p-button class="icon-button" (click)="menu.toggle($event)" [rounded]="true" severity="secondary" size="small">
+            <i class="pi pi-ellipsis-v"></i>
+        </p-button>
     </ng-template>
 </p-menubar>

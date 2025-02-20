@@ -1,1 +1,45 @@
-<p>register works!</p>
+<div class="container mx-auto pt-8 max-w-160">
+    <shared-simple-card header="register.title">
+        <form [formGroup]="formGroup" (ngSubmit)="submit()">
+            <shared-text-input-float
+                label="register.form.full-name"
+                [parentFrom]="formGroup"
+                [controlName]="wrapper.fullNameControlName"
+            ></shared-text-input-float>
+            <shared-text-input-float
+                label="register.form.username"
+                [parentFrom]="formGroup"
+                [controlName]="wrapper.usernameControlName"
+            ></shared-text-input-float>
+            <shared-text-input-float
+                label="register.form.email"
+                [parentFrom]="formGroup"
+                [controlName]="wrapper.emailControlName"
+            ></shared-text-input-float>
+            <shared-password-input
+                label="register.form.password"
+                [parentFrom]="formGroup"
+                [controlName]="wrapper.passwordControlName"
+                [feedback]="true"
+            ></shared-password-input>
+            <shared-password-input
+                label="register.form.password-reppeated"
+                [parentFrom]="formGroup"
+                [controlName]="wrapper.passwrodReppeatedControlName"
+            ></shared-password-input>
+            @if (formGroup.controls[wrapper.passwrodReppeatedControlName].dirty && formGroup.hasError(wrapper.passwordMissmatchErrorName)){
+                <div class="text-red-600">
+                    {{ 'register.form.password-missmatch-error' | translate }}
+                </div>
+            }
+            <div class="flex justify-end">
+                <shared-button
+                    text="register.form.submit"
+                    icon="pi pi-check"
+                    (onButtonClick)="submit()"
+                    [disable]="formGroup.invalid"
+                ></shared-button>
+            </div>
+        </form>
+    </shared-simple-card>
+</div>
