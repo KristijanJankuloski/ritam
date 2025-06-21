@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ritam.Api", "Ritam.Api\Ritam.Api.csproj", "{763572D3-2978-4609-A2DB-72A5FCDCAD81}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{8C406CDA-ABDC-44B1-99AA-8AEC9753D6BD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{E5FA2A07-C752-4087-B335-25F78B1AFE75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ritam.Common", "Common\Ritam.Common\Ritam.Common.csproj", "{2E1286D0-CFA3-41ED-83C1-F797754E3FE2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{763572D3-2978-4609-A2DB-72A5FCDCAD81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{763572D3-2978-4609-A2DB-72A5FCDCAD81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{763572D3-2978-4609-A2DB-72A5FCDCAD81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{763572D3-2978-4609-A2DB-72A5FCDCAD81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E1286D0-CFA3-41ED-83C1-F797754E3FE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E1286D0-CFA3-41ED-83C1-F797754E3FE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E1286D0-CFA3-41ED-83C1-F797754E3FE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E1286D0-CFA3-41ED-83C1-F797754E3FE2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2E1286D0-CFA3-41ED-83C1-F797754E3FE2} = {8C406CDA-ABDC-44B1-99AA-8AEC9753D6BD}
+	EndGlobalSection
+EndGlobal
