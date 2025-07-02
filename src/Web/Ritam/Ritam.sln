@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35707.178 d17.12
+VisualStudioVersion = 17.12.35707.178
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ritam.Api", "Ritam.Api\Ritam.Api.csproj", "{763572D3-2978-4609-A2DB-72A5FCDCAD81}"
 EndProject
@@ -10,6 +10,10 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{E5FA2A07-C752-4087-B335-25F78B1AFE75}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ritam.Common", "Common\Ritam.Common\Ritam.Common.csproj", "{2E1286D0-CFA3-41ED-83C1-F797754E3FE2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TimeManagement", "TimeManagement", "{AC71F678-C920-4CCF-B203-469DBF8C7669}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ritam.TimeManagement.Domain", "Modules\TimeManagement\Ritam.TimeManagement.Domain\Ritam.TimeManagement.Domain.csproj", "{334F6EEB-75F6-4062-BC7F-29A892B74694}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,11 +29,17 @@ Global
 		{2E1286D0-CFA3-41ED-83C1-F797754E3FE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2E1286D0-CFA3-41ED-83C1-F797754E3FE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2E1286D0-CFA3-41ED-83C1-F797754E3FE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{334F6EEB-75F6-4062-BC7F-29A892B74694}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{334F6EEB-75F6-4062-BC7F-29A892B74694}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{334F6EEB-75F6-4062-BC7F-29A892B74694}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{334F6EEB-75F6-4062-BC7F-29A892B74694}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{2E1286D0-CFA3-41ED-83C1-F797754E3FE2} = {8C406CDA-ABDC-44B1-99AA-8AEC9753D6BD}
+		{AC71F678-C920-4CCF-B203-469DBF8C7669} = {E5FA2A07-C752-4087-B335-25F78B1AFE75}
+		{334F6EEB-75F6-4062-BC7F-29A892B74694} = {AC71F678-C920-4CCF-B203-469DBF8C7669}
 	EndGlobalSection
 EndGlobal
