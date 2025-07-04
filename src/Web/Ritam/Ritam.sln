@@ -15,6 +15,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TimeManagement", "TimeManag
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ritam.TimeManagement.Domain", "Modules\TimeManagement\Ritam.TimeManagement.Domain\Ritam.TimeManagement.Domain.csproj", "{334F6EEB-75F6-4062-BC7F-29A892B74694}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ritam.TimeManagement.Commands", "Modules\TimeManagement\Ritam.TimeManagement.Commands\Ritam.TimeManagement.Commands.csproj", "{4E8B39CB-1C29-49B1-BE7B-EAF2B803C918}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ritam.TimeManagement.Contracts", "Modules\TimeManagement\Ritam.TimeManagement.Contracts\Ritam.TimeManagement.Contracts.csproj", "{3065873F-6D84-4049-A4AB-E536A1CE3612}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ritam.TimeManagement.Queries", "Modules\TimeManagement\Ritam.TimeManagement.Queries\Ritam.TimeManagement.Queries.csproj", "{491A5122-2933-4F49-AD78-AD7AA9D9CADC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +39,18 @@ Global
 		{334F6EEB-75F6-4062-BC7F-29A892B74694}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{334F6EEB-75F6-4062-BC7F-29A892B74694}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{334F6EEB-75F6-4062-BC7F-29A892B74694}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E8B39CB-1C29-49B1-BE7B-EAF2B803C918}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E8B39CB-1C29-49B1-BE7B-EAF2B803C918}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E8B39CB-1C29-49B1-BE7B-EAF2B803C918}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E8B39CB-1C29-49B1-BE7B-EAF2B803C918}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3065873F-6D84-4049-A4AB-E536A1CE3612}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3065873F-6D84-4049-A4AB-E536A1CE3612}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3065873F-6D84-4049-A4AB-E536A1CE3612}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3065873F-6D84-4049-A4AB-E536A1CE3612}.Release|Any CPU.Build.0 = Release|Any CPU
+		{491A5122-2933-4F49-AD78-AD7AA9D9CADC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{491A5122-2933-4F49-AD78-AD7AA9D9CADC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{491A5122-2933-4F49-AD78-AD7AA9D9CADC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{491A5122-2933-4F49-AD78-AD7AA9D9CADC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -41,5 +59,8 @@ Global
 		{2E1286D0-CFA3-41ED-83C1-F797754E3FE2} = {8C406CDA-ABDC-44B1-99AA-8AEC9753D6BD}
 		{AC71F678-C920-4CCF-B203-469DBF8C7669} = {E5FA2A07-C752-4087-B335-25F78B1AFE75}
 		{334F6EEB-75F6-4062-BC7F-29A892B74694} = {AC71F678-C920-4CCF-B203-469DBF8C7669}
+		{4E8B39CB-1C29-49B1-BE7B-EAF2B803C918} = {AC71F678-C920-4CCF-B203-469DBF8C7669}
+		{3065873F-6D84-4049-A4AB-E536A1CE3612} = {AC71F678-C920-4CCF-B203-469DBF8C7669}
+		{491A5122-2933-4F49-AD78-AD7AA9D9CADC} = {AC71F678-C920-4CCF-B203-469DBF8C7669}
 	EndGlobalSection
 EndGlobal

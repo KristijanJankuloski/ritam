@@ -1,6 +1,7 @@
 ﻿using Ritam.Common.Result;
+using Ritam.TimeManagement.Domain.Tenants.Events;
 
-namespace Ritam.TimeManagement.Domain.Models.Tenant;
+namespace Ritam.TimeManagement.Domain.Tenants.Models;
 public partial class Tenant
 {
     public Result<Tenant> Create(string name, string email)
@@ -22,6 +23,7 @@ public partial class Tenant
             Email = email
         };
 
+        tenant.AddDomainEvent(new TenantCreatedDomainEvent(tenant));
         return Result.Ok(tenant);
     }
 }

@@ -8,6 +8,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\..\Common\Ritam.Common\Ritam.Common.csproj" />
+    <ProjectReference Include="..\Ritam.TimeManagement.Contracts\Ritam.TimeManagement.Contracts.csproj" />
+    <ProjectReference Include="..\Ritam.TimeManagement.Domain\Ritam.TimeManagement.Domain.csproj" />
   </ItemGroup>
 
 </Project>

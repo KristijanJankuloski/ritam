@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using Ritam.TimeManagement.Domain.Models.Tenant;
+using Ritam.TimeManagement.Domain.Tenants.Models;
 
 namespace Ritam.TimeManagement.Domain.Configurations;
 public class TenantConfiguration : IEntityTypeConfiguration<Tenant>
