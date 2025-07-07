@@ -36,7 +36,7 @@ export class LayoutComponent implements OnInit {
       },
       {
         label: 'layout.menu.events',
-        icon: '',
+        icon: 'pi pi-history',
         items: [
           {
             label: 'layout.menu.events-list',

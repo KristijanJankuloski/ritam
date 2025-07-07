@@ -11,11 +11,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\Common\Ritam.Common\Ritam.Common.csproj" />
+    <ProjectReference Include="..\Modules\TimeManagement\Ritam.TimeManagement.Commands\Ritam.TimeManagement.Commands.csproj" />
+    <ProjectReference Include="..\Modules\TimeManagement\Ritam.TimeManagement.Contracts\Ritam.TimeManagement.Contracts.csproj" />
+    <ProjectReference Include="..\Modules\TimeManagement\Ritam.TimeManagement.Queries\Ritam.TimeManagement.Queries.csproj" />
   </ItemGroup>
 
 </Project>
