@@ -23,12 +23,6 @@ public class AuditableEntityInterceptor : SaveChangesInterceptor
         if (context == null) return;
         foreach (var entry in context.ChangeTracker.Entries<IEntity>())
         {
-            if (entry.State == EntityState.Added)
-            {
-                entry.Entity.CreatedBy = "User";
-                entry.Entity.CreatedOn = DateTime.UtcNow;
-            }
-
             if (entry.State == EntityState.Added || entry.State == EntityState.Modified || entry.HasChangedOwnEntities())
             {
                 entry.Entity.LastModifiedBy = "User";

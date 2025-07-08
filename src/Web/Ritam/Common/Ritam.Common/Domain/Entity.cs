@@ -8,10 +8,6 @@ public abstract class Entity : IEntity<long>
 
     public Guid Uid { get; set; }
 
-    public DateTime? CreatedOn { get; set; }
-
-    public string? CreatedBy { get; set; }
-
     public DateTime? LastModified { get; set; }
 
     public string? LastModifiedBy { get; set; }

@@ -1,6 +1,10 @@
+using Ritam.Common.Mediator;
+using Ritam.Common.Mediator.Interfaces;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddScoped<IRitamMediatorService, RitamMediatorService>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

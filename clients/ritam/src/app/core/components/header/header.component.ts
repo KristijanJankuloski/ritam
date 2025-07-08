@@ -6,6 +6,7 @@ import { MenuModule } from 'primeng/menu';
 import { ButtonModule } from 'primeng/button';
 import { TranslatePipe, TranslateService } from '@ngx-translate/core';
 import { LocalStorageService } from '@shared/services/local-storage.service';
+import { NavBarService } from '@shared/services/nav-bar.service';
 
 @Component({
   selector: 'app-header',
@@ -16,6 +17,7 @@ import { LocalStorageService } from '@shared/services/local-storage.service';
 export class HeaderComponent implements OnInit {
   private readonly translateService = inject(TranslateService);
   private readonly localStorageService = inject(LocalStorageService);
+  private readonly navBarService = inject(NavBarService);
 
   public rightMenuItems?: MenuItem[];
   public shouldShowItems = true;
@@ -48,5 +50,10 @@ export class HeaderComponent implements OnInit {
   public changeLanguage(language: string): void {
     this.localStorageService.locale = language;
     this.translateService.use(language);
+  }
+
+  public toggerPanel() {
+    const current = this.navBarService.shrinkPanel();
+    this.navBarService.shrinkPanel.set(!current);
   }
 }

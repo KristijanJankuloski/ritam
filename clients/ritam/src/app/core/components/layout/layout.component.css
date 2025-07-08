@@ -2,3 +2,25 @@
     height: 100%;
     display: block;
 }
+
+.panel {
+    transition: all ease 0.3s;
+}
+
+.shrink-panel {
+    width: 4.5rem;
+}
+
+.shrink-panel .item-label {
+    display: none;
+}
+
+@media screen and (max-width: 900px) {
+    .item-label {
+        display: none;
+    }
+
+    .panel {
+        width: 4.5rem;
+    }
+}

@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Common\Repositories\" />
     <Folder Include="Users\Events\" />
     <Folder Include="Users\Models\" />
   </ItemGroup>

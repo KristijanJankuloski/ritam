@@ -1,5 +1,6 @@
 <p-menubar>
     <ng-template #start>
+        <p-button icon="pi pi-bars" [rounded]="true" severity="secondary" size="small" class="mr-2" (onClick)="toggerPanel()" />
         <h3>{{ 'header.menu-title' | translate }}</h3>
     </ng-template>
     <ng-template #end>
